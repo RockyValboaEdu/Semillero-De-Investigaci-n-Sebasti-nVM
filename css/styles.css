@@ -3,7 +3,7 @@
   padding: 0;
   scroll-behavior: smooth; /* Hace que el movimiento sea suave y no un salto brusco */
   scroll-padding-top: 70px;
-  background-color: rgb(143, 195, 243);
+  /* background-color: rgb(143, 195, 243); */
   /* font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: italic; */
@@ -37,6 +37,10 @@ header {
 }
 section {
   padding: 10px 0;
+}
+#banner{
+  width: 100%;
+  height: auto;
 }
 
 h1 {

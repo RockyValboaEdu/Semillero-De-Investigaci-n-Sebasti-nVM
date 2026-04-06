@@ -40,11 +40,8 @@
       </div>
     </header>
 
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg bg-body-tertiary sticky-top"
-    >
-      <div class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid bg-light border border-3 border-dark-subtle rounded shadow-sm p-2">
         <a class="navbar-brand" href="#">Barra de Navegación</a>
         <button
           class="navbar-toggler"
@@ -93,15 +90,67 @@
 
     <section id="home" class="animar" data-aos="fade-left">
       <div class="container">
-        <h1 id="home-title">Semillero Instancias Por El Aprendizaje</h1>
+        <!-- <a id="home-banner">
+          <img id="banner" class="img-fluid" src="./IMG/carousel1.jpeg" alt="Image 2"/>
+        </a> -->
 
-        <a id="home-banner">
-          <img
-            id="banner"
-            src="./IMG/4e18e21c-e7b4-4b5b-9786-3bc83fb3bbb6.jpeg"
-            alt="Image 2"
-          />
-        </a>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./IMG/carousel1.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./IMG/carousel2.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./IMG/carousel3.jpeg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h1 id="home-title" class="mt-5">
+          Semillero Instancias Por El Aprendizaje
+        </h1>
 
         <p id="lema-home">
           “Un espacio donde el conocimiento, la creatividad y la programación se
@@ -181,19 +230,19 @@
           <div class="col">
             <h4>Línea de Investigación</h4>
             <p>
-              💻 Desarrollo de Software: creación de aplicaciones web y sistemas
+              Desarrollo de Software: creación de aplicaciones web y sistemas
               informáticos.
             </p>
             <p>
-              🤖 Tecnologías Emergentes: exploración de nuevas tendencias como
+              Tecnologías Emergentes: exploración de nuevas tendencias como
               inteligencia artificial y automatización.
             </p>
             <p>
-              🌐 Desarrollo Web: diseño y construcción de sitios web modernos,
+              Desarrollo Web: diseño y construcción de sitios web modernos,
               responsivos e interactivos.
             </p>
             <p>
-              📊 Análisis de Datos: uso de herramientas tecnológicas para la
+              Análisis de Datos: uso de herramientas tecnológicas para la
               interpretación y gestión de información.
             </p>
           </div>
@@ -205,12 +254,16 @@
      no combinan con la paleta que uso -->
     <section id="eventos" class="p-5 bg-dark">
       <div class="container">
-        <h1 class="text-center">Eventos</h1>
+
+        <div class="card mb-4">
+          <h1 class="text-center bg-light">Eventos</h1>
+        </div>
 
         <div class="row">
           <!-- EVENTO 1 -->
-          <div class="col" data-aos="fade-up">
-            <div class="card">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <!-- h-100 para que tenga la misma altura -->
+            <div class="card h-100 shadow-lg">
               <div class="card-body">
                 <h5 class="card-title">Taller de Programación Web</h5>
                 <p class="card-text"><strong>Fecha:</strong> 15 Abril 2026</p>
@@ -223,8 +276,8 @@
           </div>
 
           <!-- EVENTO 2 -->
-          <div class="col" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">Charla de Inteligencia Artificial</h5>
                 <p class="card-text"><strong>Fecha:</strong> 20 Abril 2026</p>
@@ -237,8 +290,8 @@
           </div>
 
           <!-- EVENTO 3 -->
-          <div class="col" data-aos="fade-up" data-aos-delay="400">
-            <div class="card">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 shadow-lg">
               <div class="card-body">
                 <h5 class="card-title">Hackathon Tecnológico</h5>
                 <p class="card-text"><strong>Fecha:</strong> 30 Abril 2026</p>
@@ -279,14 +332,14 @@
 
     <section id="equipos" class="p-5">
       <div class="container">
-        <h1 class="text-center">Equipos de Trabajo</h1>
+        <h1 class="text-center mb-4">Equipos de Trabajo</h1>
 
         <div class="row">
           <!-- EQUIPO 1 -->
-           <!-- col-md-6 mb-5 se ven dos elementos por fila en pantallas medianas
+          <!-- col-md-6 mb-5 se ven dos elementos por fila en pantallas medianas
             y da un margin bottom de 5 o 48px -->
           <div class="col-md-6 mb-5" data-aos="fade-right">
-            <div class="card shadow-sm p-4 bg-dark">
+            <div class="card shadow-lg p-4 bg-light h-100">
               <h3 class="text-center">Equipo Desarrollo Web</h3>
               <p class="text-center">
                 Encargados de diseñar y desarrollar aplicaciones web modernas e
@@ -321,7 +374,7 @@
 
           <!-- EQUIPO 2 -->
           <div class="col-md-6 mb-5" data-aos="fade-left">
-            <div class="card shadow-sm p-4 bg-dark">
+            <div class="card shadow-lg p-4 bg-light h-100">
               <h3 class="text-center">Equipo Inteligencia Artificial</h3>
               <p class="text-center">
                 Dedicados al análisis de datos y desarrollo de soluciones con
@@ -334,7 +387,7 @@
                 <!-- col-6 text-center mb-3 Sin el md porque funciona como un activador a partir de
                  768px y si la pantalla es más pequeña, lo ignora y usa el ancho total". 
                  Lo dejé porque quería que se viera igual en todas las pantallas.-->
-                 <!-- text center para que centrar sin tener que decirle desde el css -->
+                <!-- text center para que centrar sin tener que decirle desde el css -->
                 <div class="col-6 text-center mb-3">
                   <img
                     src="./IMG/2.jpeg"
@@ -368,7 +421,7 @@
     <!-- Una p de padding con un 5 que son 48px y esos numeros van de 1 a 5 -->
     <section id="resultados" class="p-5 bg-dark">
       <div class="container">
-        <h1 class="text-center mb-5">Resultados de Investigación</h1>
+        <h1 class="text-center mb-5 bg-light">Resultados de Investigación</h1>
 
         <div class="row">
           <!-- PROYECTO 1 -->
@@ -377,8 +430,8 @@
            y de un poco más de espacio abajo. -->
 
           <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="card h-100 shadow-sm p-3 bg-dark">
-              <div class="card-body ">
+            <div class="card h-100 shadow-sm p-3 bg-light">
+              <div class="card-body">
                 <h5 class="card-title">Sistema de Gestión Académica</h5>
                 <p class="card-text">
                   <strong>Proyecto:</strong> Desarrollo de una plataforma web
@@ -399,7 +452,7 @@
 
           <!-- PROYECTO 2 -->
           <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100 shadow-sm p-3 bg-dark">
+            <div class="card h-100 shadow-sm p-3 bg-light">
               <div class="card-body">
                 <h5 class="card-title">Aplicación de Análisis de Datos</h5>
                 <p class="card-text">
@@ -422,9 +475,9 @@
           <!-- PROYECTO 3 -->
           <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
             <!-- pues card es un recuadro con borde y sombra suave pero le aplica un height de 100% -->
-             <!-- Espero que el profesor no piense que los comentarios son de la IA... Estoy anotando porque luego se me olvida -->
-            <div class="card h-100 shadow-sm p-3 bg-dark">
-              <div class="card-body ">
+            <!-- Espero que el profesor no piense que los comentarios son de la IA... Estoy anotando porque luego se me olvida -->
+            <div class="card h-100 shadow-sm p-3 bg-light">
+              <div class="card-body">
                 <h5 class="card-title">Prototipo de Aplicación Móvil</h5>
                 <p class="card-text">
                   <strong>Proyecto:</strong> Diseño de una app móvil orientada a
@@ -446,104 +499,109 @@
     </section>
 
     <section id="productos" class="p-5">
-  <div class="container">
-    <h1 class="text-center mb-5">Productos Académicos</h1>
+      <div class="container">
+        <h1 class="text-center mb-5">Productos Académicos</h1>
 
-    <!-- LIBROS -->
-    <h3 class="mb-4">Libros</h3>
-    <div class="row mb-5">
+        <!-- LIBROS -->
+        <h3 class="mb-4">Libros</h3>
+        <div class="row mb-5">
+          <div class="col-md-4 mb-3" data-aos="fade-up">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Introducción a la Programación</h5>
+              <p>
+                Libro académico enfocado en los fundamentos de la programación.
+              </p>
+              <a class="btn btn-primary" download>Descargar PDF</a>
+            </div>
+          </div>
 
-      <div class="col-md-4 mb-3" data-aos="fade-up">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Introducción a la Programación</h5>
-          <p>Libro académico enfocado en los fundamentos de la programación.</p>
-          <a class="btn btn-primary" download>Descargar PDF</a>
+          <!-- el col-md-4 mb-3 hace que se ajuste a pantallas medianas y se puedan ver 3 elementos iguales uno al lado del otro -->
+
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Desarrollo Web Moderno</h5>
+              <p>
+                Guía práctica para la creación de aplicaciones web actuales.
+              </p>
+              <a class="btn btn-primary" download>Descargar PDF</a>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- el col-md-4 mb-3 hace que se ajuste a pantallas medianas y se puedan ver 3 elementos iguales uno al lado del otro -->
-      
-      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Desarrollo Web Moderno</h5>
-          <p>Guía práctica para la creación de aplicaciones web actuales.</p>
-          <a class="btn btn-primary" download>Descargar PDF</a>
-        </div>
-      </div>
+        <!-- ARTÍCULOS -->
 
-    </div>
-
-    <!-- ARTÍCULOS -->
-
-    <!-- el col-md-6 mb-3 se refiere a que van 2 por columna en pantallas medianas
+        <!-- el col-md-6 mb-3 se refiere a que van 2 por columna en pantallas medianas
      debido a que la cada fila ocupa 6 de las 12 partes de la fila -->
-    <h3 class="mb-4">Artículos Publicados</h3>
-    <div class="row mb-5">
+        <h3 class="mb-4">Artículos Publicados</h3>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Impacto de la Inteligencia Artificial en la Educación</h5>
+              <p>
+                Análisis sobre cómo la IA está transformando los procesos de
+                enseñanza.
+              </p>
+              <a href="#resultados" class="btn btn-outline-primary"
+                >Ver artículo</a
+              >
+            </div>
+          </div>
 
-      <div class="col-md-6 mb-3" data-aos="fade-right">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Impacto de la Inteligencia Artificial en la Educación</h5>
-          <p>
-            Análisis sobre cómo la IA está transformando los procesos de enseñanza.
-          </p>
-          <a href="#resultados" class="btn btn-outline-primary">Ver artículo</a>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Tendencias en Desarrollo de Software</h5>
+              <p>
+                Estudio sobre metodologías y herramientas modernas en el
+                desarrollo tecnológico.
+              </p>
+              <a href="#resultados" class="btn btn-outline-primary"
+                >Ver artículo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- INFORMES / PONENCIAS -->
+
+        <!-- el mb4 hace que haya un margen inferior de 1rem -->
+        <h3 class="mb-4">Informes y Ponencias</h3>
+        <div class="row">
+          <div class="col-md-4 mb-3" data-aos="zoom-in">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Informe de Proyecto Web</h5>
+              <p>
+                Documento que detalla el desarrollo de una aplicación web
+                académica.
+              </p>
+              <a href="#" class="btn btn-success" download>Descargar</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Ponencia sobre Análisis de Datos</h5>
+              <p>
+                Presentación académica sobre técnicas de procesamiento de datos.
+              </p>
+              <a href="#" class="btn btn-success" download>Descargar PDF</a>
+            </div>
+          </div>
+
+          <!-- el col-md-4 mb-3 hace que se ajuste a pantallas medianas y se puedan ver 3 elementos iguales uno al lado del otro -->
+
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card shadow-sm p-3 h-100">
+              <h5>Informe de Inteligencia Artificial</h5>
+              <p>
+                Documento sobre la implementación de modelos de IA en proyectos
+                reales.
+              </p>
+              <a href="#" class="btn btn-success" download>Descargar PDF</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-6 mb-3" data-aos="fade-left">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Tendencias en Desarrollo de Software</h5>
-          <p>
-            Estudio sobre metodologías y herramientas modernas en el desarrollo tecnológico.
-          </p>
-          <a href="#resultados" class="btn btn-outline-primary">Ver artículo</a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- INFORMES / PONENCIAS -->
-
-    <!-- el mb4 hace que haya un margen inferior de 1rem -->
-    <h3 class="mb-4">Informes y Ponencias</h3>
-    <div class="row">
-
-      <div class="col-md-4 mb-3" data-aos="zoom-in">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Informe de Proyecto Web</h5>
-          <p>
-            Documento que detalla el desarrollo de una aplicación web académica.
-          </p>
-          <a href="#" class="btn btn-success" download>Descargar</a>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Ponencia sobre Análisis de Datos</h5>
-          <p>
-            Presentación académica sobre técnicas de procesamiento de datos.
-          </p>
-          <a href="#" class="btn btn-success" download>Descargar PDF</a>
-        </div>
-      </div>
-
-      <!-- el col-md-4 mb-3 hace que se ajuste a pantallas medianas y se puedan ver 3 elementos iguales uno al lado del otro -->
-
-      <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="400">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Informe de Inteligencia Artificial</h5>
-          <p>
-            Documento sobre la implementación de modelos de IA en proyectos reales.
-          </p>
-          <a href="#" class="btn btn-success" download>Descargar PDF</a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <script>
       AOS.init({
