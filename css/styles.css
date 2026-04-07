@@ -1,8 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; /* Hace que el movimiento sea suave y no un salto brusco */
+  scroll-behavior: smooth; /*  Movimiento smooth, o suave*/
   scroll-padding-top: 70px;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Fuerza a que las filas no se salgan del contenedor padre... Esta hpta 
+cosa fue un dolor de cabeza profe. */
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 header {
@@ -31,9 +44,11 @@ header {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 section {
   padding: 10px 0;
 }
+
 #banner {
   width: 100%;
   height: auto;
@@ -45,6 +60,7 @@ h1 {
   font-weight: 700;
   margin: 0;
 }
+
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
@@ -59,6 +75,7 @@ p {
   font-style: italic;
   margin-top: 20px;
 }
+
 h4 {
   font-family: "Alfa Slab One", serif;
   font-style: normal;
@@ -96,7 +113,8 @@ h4 {
 .gallery-img:hover {
   transform: scale(1.05);
 }
-#tittle-contacto{
+
+#tittle-contacto {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   color: white;
@@ -104,9 +122,24 @@ h4 {
   margin: 0;
 }
 
-#tittle-informacion{
+#tittle-informacion {
   font-family: "Lobster", sans-serif;
   color: white;
   font-weight: 500;
   font-size: 3rem;
+}
+
+
+@media (min-width: 992px) and (max-width: 1150px) {
+  
+  .nav-link {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
 }
