@@ -3,10 +3,6 @@
   padding: 0;
   scroll-behavior: smooth; /* Hace que el movimiento sea suave y no un salto brusco */
   scroll-padding-top: 70px;
-  /* background-color: rgb(143, 195, 243); */
-  /* font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic; */
 }
 
 header {
@@ -38,7 +34,7 @@ header {
 section {
   padding: 10px 0;
 }
-#banner{
+#banner {
   width: 100%;
   height: auto;
 }
@@ -51,7 +47,7 @@ h1 {
 }
 
 p {
-  font-family: "Changa One", sans-serif;
+  font-family: "Arva", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   font-style: italic;
@@ -59,6 +55,24 @@ p {
 }
 h4 {
   font-family: "Alfa Slab One", serif;
-  font-weight: 700;
   font-style: normal;
+}
+
+#navbar {
+  font-family: "Lobster", sans-serif;
+}
+
+#navbar .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+#navbar .nav-link:hover {
+  color: #fd7e14 !important;
+}
+
+#navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
