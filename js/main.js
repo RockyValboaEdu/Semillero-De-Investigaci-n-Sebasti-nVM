@@ -17,3 +17,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
+
+function abrirImagen(img) {
+  const imagenModal = document.getElementById("imagenModal");
+  imagenModal.src = img.src;
+}

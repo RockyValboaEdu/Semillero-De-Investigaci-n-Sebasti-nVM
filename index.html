@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semillero de Programación</title>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+
     <!-- ANIMATE.CSS -->
     <link
       rel="stylesheet"
@@ -97,8 +101,8 @@
       </div>
     </nav>
 
-    <section id="home" class="animar" data-aos="fade-left">
-      <div class="container">
+    <section id="home" class="animar animate__animated" data-aos="fade-left">
+      <article class="container">
         <!-- <a id="home-banner">
           <img id="banner" class="img-fluid" src="./IMG/carousel1.jpeg" alt="Image 2"/>
         </a> -->
@@ -173,11 +177,11 @@
           investigación, donde los estudiantes fortalecen sus conocimientos a
           través de proyectos, trabajo colaborativo y aprendizaje continuo.
         </p>
-      </div>
+      </article>
     </section>
 
     <section id="informacion" class="p-5">
-      <div data-aos="fade-right" class="container2">
+      <article data-aos="fade-right" class="container2">
         <h1 class="text-center">Sobre el Semillero</h1>
         <p>
           El Semillero Instancias Por El Aprendizaje surge como una iniciativa
@@ -397,50 +401,13 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row">
-          <div class="col">
-            <h4>Objetivos</h4>
-            <p>
-              • Desarrollar habilidades prácticas en programación y uso de
-              tecnologías actuales.
-            </p>
-            <p>
-              • Fomentar el pensamiento crítico y la capacidad de resolución de
-              problemas.
-            </p>
-            <p>
-              • Promover la participación en eventos académicos y de
-              investigación.
-            </p>
-          </div>
-          <div class="col">
-            <h4>Línea de Investigación</h4>
-            <p>
-              <strong>Desarrollo de Software:</strong> creación de aplicaciones web y sistemas
-              informáticos.
-            </p>
-            <p>
-              <strong>Tecnologías Emergentes:</strong> exploración de nuevas tendencias como
-              inteligencia artificial y automatización.
-            </p>
-            <p>
-              <strong>Desarrollo Web:</strong> diseño y construcción de sitios web modernos,
-              responsivos e interactivos.
-            </p>
-            <p>
-              <strong>Análisis de Datos:</strong>  uso de herramientas tecnológicas para la
-              interpretación y gestión de información.
-            </p>
-          </div>
-        </div> -->
-      </div>
+      </article>
     </section>
 
     <!-- el bg-dark es un background dark y hay muchos otros pero los colores 
      no combinan con la paleta que uso -->
     <section id="eventos" class="p-5 bg-dark">
-      <div class="container">
+      <article class="container">
         <div class="mb-4">
           <h1 class="text-center bg-light">Eventos</h1>
         </div>
@@ -513,11 +480,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <section id="equipos" class="p-5">
-      <div class="container">
+      <article class="container">
         <h1 class="text-center mb-4">Equipos de Trabajo</h1>
 
         <div class="row">
@@ -601,12 +568,14 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
+
+    <!-- RESULTADOS -->
 
     <!-- Una p de padding con un 5 que son 48px y esos numeros van de 1 a 5 -->
     <section id="resultados" class="p-5 bg-dark">
-      <div class="container">
+      <article class="container">
         <h1 class="text-center mb-5 bg-light">Resultados de Investigación</h1>
 
         <div class="row">
@@ -618,7 +587,7 @@
           <div class="col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 shadow-sm p-3 bg-light">
               <div class="card-body">
-                <h5 class="card-title">Sistema de Gestión Académica</h5>
+                <h2 class="card-title">Sistema de Gestión Académica</h2>
                 <p class="card-text">
                   <strong>Proyecto:</strong> Desarrollo de una plataforma web
                   para la gestión de estudiantes y cursos.
@@ -640,7 +609,7 @@
           <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 shadow-sm p-3 bg-light">
               <div class="card-body">
-                <h5 class="card-title">Aplicación de Análisis de Datos</h5>
+                <h2 class="card-title">Aplicación de Análisis de Datos</h2>
                 <p class="card-text">
                   <strong>Proyecto:</strong> Herramienta para el análisis y
                   visualización de datos.
@@ -664,7 +633,7 @@
             <!-- Espero que el profesor no piense que los comentarios son de la IA... Estoy anotando porque luego se me olvida -->
             <div class="card h-100 shadow-sm p-3 bg-light">
               <div class="card-body">
-                <h5 class="card-title">Prototipo de Aplicación Móvil</h5>
+                <h2 class="card-title">Prototipo de Aplicación Móvil</h2>
                 <p class="card-text">
                   <strong>Proyecto:</strong> Diseño de una app móvil orientada a
                   la gestión de tareas.
@@ -681,11 +650,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <section id="productos" class="p-5">
-      <div class="container">
+      <article class="container">
         <h1 class="text-center mb-5">Productos Académicos</h1>
 
         <!-- LIBROS -->
@@ -717,7 +686,7 @@
         <!-- ARTÍCULOS -->
 
         <!-- el col-md-6 mb-3 se refiere a que van 2 por columna en pantallas medianas
-     debido a que la cada fila ocupa 6 de las 12 partes de la fila -->
+        debido a que la cada fila ocupa 6 de las 12 partes de la fila -->
         <h3 class="mb-4">Artículos Publicados</h3>
         <div class="row mb-5">
           <div class="col-md-6 mb-3" data-aos="fade-right">
@@ -786,14 +755,106 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
+
+    <!-- GALERÍA café jajaja -->
+
+    <section id="galeria" class="p-5 bg-light">
+      <article class="container">
+        <h1 class="text-center mb-5">Galería</h1>
+
+        <div class="row g-3" data-aos="zoom-in">
+          <!-- imagen1 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img1.png"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+
+          <!-- imagen2 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img2.jpg"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+
+          <!-- imagen3 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img3.jpg"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+
+          <!-- imagen4 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img4.jpg"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+
+          <!-- imagen5 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img5.png"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+
+          <!-- imagen6 -->
+          <div class="col-md-4">
+            <img
+              src="./IMG/img6.png"
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#modalGaleria"
+              onclick="abrirImagen(this)"
+            />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="modal fade" id="modalGaleria" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <img id="imagenModal" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+
+    
 
     <script>
       AOS.init({
-        // duration: 1000
         once: false,
       });
     </script>
   </body>
+
+  <footer class="bg-black text-light text-center p-3">
+    <p class="mb-0">
+      © 2026 Semillero Instancias Por El Aprendizaje | Todos los derechos
+      reservados para el profesor y mi persona.
+    </p>
+  </footer>
 </html>
