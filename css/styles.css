@@ -72,6 +72,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 #navbar .nav-link:hover {
@@ -79,8 +80,8 @@ h4 {
 }
 
 #navbar .navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .gallery-img {
@@ -94,4 +95,18 @@ h4 {
 
 .gallery-img:hover {
   transform: scale(1.05);
+}
+#tittle-contacto{
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+#tittle-informacion{
+  font-family: "Lobster", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
 }
