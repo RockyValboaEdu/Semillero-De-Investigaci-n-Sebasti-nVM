@@ -172,8 +172,8 @@ h4 {
     text-align: center;
   }
 
-  /* Descubrí esto gracias a la IA,
-  sirve mucho si quieres aplicar los mismos estilos 
+  /* Descubrí esto gracias a la IA.
+  Sirve mucho si quieres aplicar los mismos estilos 
   en etiquetas diferentes */
   #emerging-tech,
   #software,
@@ -217,6 +217,15 @@ h4 {
   #logo-mision,
   #logo-vision {
     width: 50%;
+  }
+
+  #tittle-informacion {
+    padding-left: 10px !important;  
+    padding-right: 10px !important;
+    font-size: 2.5rem;             
+    width: 100%;                   
+    display: block;
+    text-align: center;
   }
 
 }
