@@ -47,8 +47,10 @@
     </div>
   </header>
 
+  <!-- el overflow-x: hidden; de mi css me mató el sticky-top para que la barra de navegación
+  no se mantenga fija en la parte superior y me siga por toda la página :( -->
   <nav id="navbar" class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
-    <div class="container-fluid bg-light border border-3 border-dark-subtle rounded shadow-sm p-2">
+    <article class="container-fluid bg-light border border-3 border-dark-subtle rounded shadow-sm p-2">
       <a class="navbar-brand" href="#">Barra de Navegación</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,14 +87,11 @@
             </li> -->
         </ul>
       </div>
-    </div>
+    </article>
   </nav>
 
   <section id="home" class="animar animate__animated" data-aos="fade-left">
     <article class="container">
-      <!-- <a id="home-banner">
-          <img id="banner" class="img-fluid" src="./IMG/carousel1.jpeg" alt="Image 2"/>
-        </a> -->
 
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -168,7 +167,7 @@
         y su proyección hacia la comunidad académica.
       </p>
 
-      <div class="container">
+      <article id="mision-vision" class="container">
         <h1 class="text-center mb-4">Equipos de Trabajo</h1>
 
         <!-- MISIÓN -->
@@ -222,12 +221,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- OBJETIVOS Y LINEA DE INVESTIGACIÓN -->
 
-      <div class="container mt-5">
-        <div class="row g-4">
+      <article class="container mt-5">
+        <div id="objetivo-linea"class="row g-4">
           <div class="col-md-5" data-aos="fade-right">
             <div class="card shadow-lg p-4 h-100 bg-light" style="border-radius: 15px">
               <h3 class="fw-bold mb-4">Objetivos</h3>
@@ -256,7 +255,7 @@
               <h3 class="fw-bold mb-4">Línea de Investigación</h3>
 
               <div class="row g-3">
-                <div class="col-md-6">
+                <div id="software" class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white">
                     <div class="d-flex align-items-start">
                       <img src="./IMG/software.png" width="45" class="me-3" alt="Icono" />
@@ -271,7 +270,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div id="emerging-tech" class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white">
                     <div class="d-flex align-items-start">
                       <img src="./IMG/Emerging Tech.png" width="45" class="me-3" alt="Icono" />
@@ -286,7 +285,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div id="web" class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white">
                     <div class="d-flex align-items-start">
                       <img src="./IMG/Web.png" width="45" class="me-3" alt="Icono" />
@@ -301,7 +300,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div id="data-analisis" class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white">
                     <div class="d-flex align-items-start">
                       <img src="./IMG/Data Analisis.png" width="45" class="me-3" alt="Icono" />
@@ -319,7 +318,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </article>
   </section>
 
